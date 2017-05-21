@@ -131,7 +131,6 @@ var makePlayer = function() {
 	});
 }
 
-
 var makeBG = function () {
     return draw
         .rect(width, height)
@@ -141,7 +140,6 @@ var makeBG = function () {
 
 // ================================
 // ================================================================
-
 
 // INPUT PROCESSING
 // ----------------------------------------------------------------
@@ -160,7 +158,7 @@ var setGameInput = function () {
 
 	switch (key) {
 	    // shift
-	case 16: speed = 12; break;
+	case 16: speed = 10; break;
 	    // W
 	case 87: dirY = -1; break;
 	    // A
@@ -208,8 +206,4 @@ var loop = function (timestamp) {
 }
 
 start();
-var lastRender = 0;
 window.requestAnimationFrame(loop);
-
-
-
